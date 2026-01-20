@@ -5,7 +5,7 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace Spryker\CmsSlotStorage\tests\SprykerTest\Zed\CmsSlotStorage\Business;
+namespace SprykerTest\Zed\CmsSlotStorage\Business;
 
 use Codeception\Test\Unit;
 use Generated\Shared\Transfer\FilterTransfer;
@@ -13,9 +13,6 @@ use Generated\Shared\Transfer\FilterTransfer;
 /**
  * Auto-generated group annotations
  *
- * @group Spryker
- * @group CmsSlotStorage
- * @group tests
  * @group SprykerTest
  * @group Zed
  * @group CmsSlotStorage
