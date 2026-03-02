@@ -12,12 +12,6 @@ use Orm\Zed\CmsSlotStorage\Persistence\SpyCmsSlotStorage;
 
 class CmsSlotStorageMapper
 {
-    /**
-     * @param \Generated\Shared\Transfer\CmsSlotStorageTransfer $cmsSlotStorageTransfer
-     * @param \Orm\Zed\CmsSlotStorage\Persistence\SpyCmsSlotStorage $cmsSlotStorageEntity
-     *
-     * @return \Orm\Zed\CmsSlotStorage\Persistence\SpyCmsSlotStorage
-     */
     public function mapCmsSlotStorageTransferToEntity(
         CmsSlotStorageTransfer $cmsSlotStorageTransfer,
         SpyCmsSlotStorage $cmsSlotStorageEntity

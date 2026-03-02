@@ -20,17 +20,11 @@ use Spryker\Zed\Kernel\Communication\AbstractCommunicationFactory;
  */
 class CmsSlotStorageCommunicationFactory extends AbstractCommunicationFactory
 {
-    /**
-     * @return \Spryker\Zed\CmsSlotStorage\Dependency\Facade\CmsSlotStorageToCmsSlotFacadeInterface
-     */
     public function getCmsSlotFacade(): CmsSlotStorageToCmsSlotFacadeInterface
     {
         return $this->getProvidedDependency(CmsSlotStorageDependencyProvider::FACADE_CMS_SLOT);
     }
 
-    /**
-     * @return \Spryker\Zed\CmsSlotStorage\Dependency\Facade\CmsSlotStorageToEventBehaviorFacadeInterface
-     */
     public function getEventBehaviorFacade(): CmsSlotStorageToEventBehaviorFacadeInterface
     {
         return $this->getProvidedDependency(CmsSlotStorageDependencyProvider::FACADE_EVENT_BEHAVIOR);

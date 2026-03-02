@@ -15,11 +15,6 @@ use Spryker\Zed\Kernel\Persistence\AbstractEntityManager;
  */
 class CmsSlotStorageEntityManager extends AbstractEntityManager implements CmsSlotStorageEntityManagerInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\CmsSlotStorageTransfer $cmsSlotStorageTransfer
-     *
-     * @return void
-     */
     public function saveCmsSlotStorage(CmsSlotStorageTransfer $cmsSlotStorageTransfer): void
     {
         $cmsSlotStorageTransfer->requireKey();

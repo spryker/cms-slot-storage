@@ -36,31 +36,16 @@ class CmsSlotStorageEventSubscriber extends AbstractPlugin implements EventSubsc
         return $eventCollection;
     }
 
-    /**
-     * @param \Spryker\Zed\Event\Dependency\EventCollectionInterface $eventCollection
-     *
-     * @return void
-     */
     protected function addCmsSlotPublishStorageListener(EventCollectionInterface $eventCollection): void
     {
         $eventCollection->addListenerQueued(CmsSlotEvents::CMS_SLOT_PUBLISH, new CmsSlotStoragePublishListener(), 0, null, $this->getConfig()->getEventQueueName());
     }
 
-    /**
-     * @param \Spryker\Zed\Event\Dependency\EventCollectionInterface $eventCollection
-     *
-     * @return void
-     */
     protected function addCmsSlotCreateStorageListener(EventCollectionInterface $eventCollection): void
     {
         $eventCollection->addListenerQueued(CmsSlotEvents::ENTITY_SPY_CMS_SLOT_CREATE, new CmsSlotStoragePublishListener(), 0, null, $this->getConfig()->getEventQueueName());
     }
 
-    /**
-     * @param \Spryker\Zed\Event\Dependency\EventCollectionInterface $eventCollection
-     *
-     * @return void
-     */
     protected function addCmsSlotUpdateStorageListener(EventCollectionInterface $eventCollection): void
     {
         $eventCollection->addListenerQueued(CmsSlotEvents::ENTITY_SPY_CMS_SLOT_UPDATE, new CmsSlotStoragePublishListener(), 0, null, $this->getConfig()->getEventQueueName());

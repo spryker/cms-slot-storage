@@ -26,10 +26,6 @@ class CmsSlotStorageReader implements CmsSlotStorageReaderInterface
      */
     protected $synchronizationService;
 
-    /**
-     * @param \Spryker\Client\CmsSlotStorage\Dependency\Client\CmsSlotStorageToStorageClientInterface $storageClient
-     * @param \Spryker\Client\CmsSlotStorage\Dependency\Service\CmsSlotStorageToSynchronizationServiceInterface $synchronizationService
-     */
     public function __construct(
         CmsSlotStorageToStorageClientInterface $storageClient,
         CmsSlotStorageToSynchronizationServiceInterface $synchronizationService
@@ -61,22 +57,12 @@ class CmsSlotStorageReader implements CmsSlotStorageReaderInterface
         return $this->mapToCmsSlotStorageTransfer($cmsSlotStorageData);
     }
 
-    /**
-     * @param array $cmsSlotStorageData
-     *
-     * @return \Generated\Shared\Transfer\CmsSlotStorageTransfer
-     */
     protected function mapToCmsSlotStorageTransfer(array $cmsSlotStorageData): CmsSlotStorageTransfer
     {
         return (new CmsSlotStorageTransfer())
             ->fromArray($cmsSlotStorageData, true);
     }
 
-    /**
-     * @param string $cmsSlotKey
-     *
-     * @return string
-     */
     protected function generateKey(string $cmsSlotKey): string
     {
         $synchronizationDataTransfer = (new SynchronizationDataTransfer())

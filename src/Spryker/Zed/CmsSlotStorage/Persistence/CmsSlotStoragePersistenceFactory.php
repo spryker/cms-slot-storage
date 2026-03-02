@@ -18,17 +18,11 @@ use Spryker\Zed\Kernel\Persistence\AbstractPersistenceFactory;
  */
 class CmsSlotStoragePersistenceFactory extends AbstractPersistenceFactory
 {
-    /**
-     * @return \Orm\Zed\CmsSlotStorage\Persistence\SpyCmsSlotStorageQuery
-     */
     public function getCmsSlotStorageQuery(): SpyCmsSlotStorageQuery
     {
         return SpyCmsSlotStorageQuery::create();
     }
 
-    /**
-     * @return \Spryker\Zed\CmsSlotStorage\Persistence\Propel\Mapper\CmsSlotStorageMapper
-     */
     public function createCmsSlotStorageMapper(): CmsSlotStorageMapper
     {
         return new CmsSlotStorageMapper();

@@ -11,10 +11,5 @@ use Generated\Shared\Transfer\CmsSlotStorageTransfer;
 
 interface CmsSlotStorageEntityManagerInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\CmsSlotStorageTransfer $cmsSlotStorageTransfer
-     *
-     * @return void
-     */
     public function saveCmsSlotStorage(CmsSlotStorageTransfer $cmsSlotStorageTransfer): void;
 }

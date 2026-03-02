@@ -47,9 +47,6 @@ class CmsSlotStoragePublishListenerTest extends Unit
      */
     protected $cmsSlotStorageEntityManager;
 
-    /**
-     * @return void
-     */
     public function setUp(): void
     {
         parent::setUp();
@@ -64,9 +61,6 @@ class CmsSlotStoragePublishListenerTest extends Unit
         $this->cmsSlotStorageEntityManager = new CmsSlotStorageEntityManager();
     }
 
-    /**
-     * @return void
-     */
     public function testCmsSlotStoragePublishListenerStoreDataIfCmsSlotIsActive(): void
     {
         // Arrange
@@ -89,12 +83,6 @@ class CmsSlotStoragePublishListenerTest extends Unit
         $this->assertCmsSlotStorage($beforeCount, $cmsSlotTransfer);
     }
 
-    /**
-     * @param int $beforeCount
-     * @param \Generated\Shared\Transfer\CmsSlotTransfer $cmsSlotTransfer
-     *
-     * @return void
-     */
     protected function assertCmsSlotStorage(int $beforeCount, CmsSlotTransfer $cmsSlotTransfer): void
     {
         $cmsSlotStorageEntities = SpyCmsSlotStorageQuery::create()->filterByCmsSlotKey_In([$cmsSlotTransfer->getKey()])->find();

@@ -77,12 +77,6 @@ class CmsSlotEventResourceBulkRepositoryPlugin extends AbstractPlugin implements
         return SpyCmsSlotTableMap::COL_ID_CMS_SLOT;
     }
 
-    /**
-     * @param int $offset
-     * @param int $limit
-     *
-     * @return \Generated\Shared\Transfer\FilterTransfer
-     */
     protected function createFilterTransfer(int $offset, int $limit): FilterTransfer
     {
         return (new FilterTransfer())

@@ -24,10 +24,6 @@ class CmsSlotStoragePublisher implements CmsSlotStoragePublisherInterface
      */
     protected $cmsSlotStorageEntityManager;
 
-    /**
-     * @param \Spryker\Zed\CmsSlotStorage\Dependency\Facade\CmsSlotStorageToCmsSlotFacadeInterface $cmsSlotFacade
-     * @param \Spryker\Zed\CmsSlotStorage\Persistence\CmsSlotStorageEntityManagerInterface $cmsSlotStorageEntityManager
-     */
     public function __construct(
         CmsSlotStorageToCmsSlotFacadeInterface $cmsSlotFacade,
         CmsSlotStorageEntityManagerInterface $cmsSlotStorageEntityManager

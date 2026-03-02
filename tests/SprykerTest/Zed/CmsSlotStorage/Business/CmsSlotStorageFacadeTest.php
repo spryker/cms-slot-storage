@@ -28,9 +28,6 @@ class CmsSlotStorageFacadeTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testGetSynchronizationTransferCollectionReturnsCorrectNumberOfTransfers(): void
     {
         // Arrange
@@ -49,9 +46,6 @@ class CmsSlotStorageFacadeTest extends Unit
         $this->assertCount(2, $synchronizationDataTransfers);
     }
 
-    /**
-     * @return void
-     */
     public function testGetSynchronizationTransferCollectionReturnsTransferWithCorrectData(): void
     {
         // Arrange

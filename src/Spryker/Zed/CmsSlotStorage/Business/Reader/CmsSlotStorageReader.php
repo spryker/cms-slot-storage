@@ -18,9 +18,6 @@ class CmsSlotStorageReader implements CmsSlotStorageReaderInterface
      */
     protected $cmsSlotStorageRepository;
 
-    /**
-     * @param \Spryker\Zed\CmsSlotStorage\Persistence\CmsSlotStorageRepositoryInterface $cmsSlotStorageRepository
-     */
     public function __construct(CmsSlotStorageRepositoryInterface $cmsSlotStorageRepository)
     {
         $this->cmsSlotStorageRepository = $cmsSlotStorageRepository;
