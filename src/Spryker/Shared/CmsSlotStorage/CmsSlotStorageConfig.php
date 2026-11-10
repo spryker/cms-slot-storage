@@ -7,9 +7,9 @@
 
 namespace Spryker\Shared\CmsSlotStorage;
 
-use Spryker\Shared\Kernel\AbstractBundleConfig;
+use Spryker\Shared\Kernel\AbstractSharedConfig;
 
-class CmsSlotStorageConfig extends AbstractBundleConfig
+class CmsSlotStorageConfig extends AbstractSharedConfig
 {
     /**
      * Specification:
